@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="feedback.css">
+    <title>Document</title>
+</head>
+<body>
+  <div class="feedback-container">
+    <h2>Write a Feedback</h2>
+    <form action="/submit-feedback" method="POST" id="feedform">
+      <label for="Name">Your Name:</label><br>
+      <input type="text" id="name" name="name" placeholder="Enter your name..."><br><br>
+      <label for="Review">Write Feedback:</label><br>
+      <textarea id="feedback" name="feedback" rows="5" placeholder="Write your feedback here..."></textarea><br><br>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+  <script src="feed.js"></script>
+</body>
+</html>
