@@ -5,7 +5,7 @@ const feedtext = document.querySelector('#feedback').value
 const urlparams = new URLSearchParams(window.location.search)
 const productid = urlparams.get('productid')
 
-const res = await fetch(`https://cloud-backend-fnrd.onrender.com/api/feedback-submit/${productid}`,{
+const res = await fetch(`https://cloud-backend-fnrd.onrender.com/api/feedback-submit`,{
     method:"POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({
